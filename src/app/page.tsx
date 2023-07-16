@@ -14,7 +14,7 @@ export default function App() {
   const { x, y } = useFollowPointer(ref);
 
   return (
-    <main className="flex flex-col items-center justify-between cursor-cell">
+    <main className="flex flex-col items-center justify-between cursor-cell bg-stone-950">
       <motion.div
         ref={ref}
         className="w-[50px] h-[50px] rounded-full bg-sky-400 top-0 left-0 fixed"
