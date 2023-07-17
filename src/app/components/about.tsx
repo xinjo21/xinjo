@@ -14,12 +14,18 @@ export default function About() {
               I am <strong>El-Razin Jo</strong>, based on the Philippines
             </p>
           </div>
-          <p>not a pro but pwede na</p> 
+          <p>not a pro but pwede na</p>
         </div>
-        <div className="h-full flex flex-col gap-8 place-content-center color-gray-500">
-          <SiGithub className="w-7 h-7" />
-          <SiLinkedin className="w-7 h-7" />
-          <SiBehance className="w-7 h-7" />
+        <div className="z-10 h-full flex flex-col gap-8 place-content-center color-gray-500">
+          <a href="https://github.com/xinjo21" target="_blank">
+            <SiGithub className="w-7 h-7" />
+          </a>
+          <a href="https://www.linkedin.com/in/elrazinjo/" target="_blank">
+            <SiLinkedin className="w-7 h-7" />
+          </a>
+          <a href="http://be.net/xinjo21" target="_blank">
+            <SiBehance className="w-7 h-7" />
+          </a>
         </div>
       </div>
       <p className="h-[10vh] pt-2 font-mono tracking-widest flex flex-col place-items-center">

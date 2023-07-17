@@ -14,10 +14,10 @@ export default function App() {
   const { x, y } = useFollowPointer(ref);
 
   return (
-    <main className="flex flex-col items-center justify-between cursor-cell bg-stone-950">
+    <>
       <motion.div
         ref={ref}
-        className="w-[50px] h-[50px] rounded-full bg-sky-400 top-0 left-0 fixed"
+        className="w-[50px] h-[50px] rounded-full bg-sky-400 top-0 left-0 fixed pointer-events-none"
         animate={{ x, y }}
         transition={{
           type: "spring",
@@ -26,11 +26,12 @@ export default function App() {
           restDelta: 0.001,
         }}
       />
-      <About />
-      
-      <Project />
-      <TechStack />
-      {/* 
+      <main className="flex flex-col items-center justify-between cursor-cell bg-stone-950">
+        <About />
+
+        <Project />
+        <TechStack />
+        {/* 
         About & Link
         more about
         
@@ -51,7 +52,8 @@ export default function App() {
 
         Contact
       */}
-    </main>
+      </main>
+    </>
   );
 }
 
