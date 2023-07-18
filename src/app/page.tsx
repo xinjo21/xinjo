@@ -8,6 +8,7 @@ import Image from "next/image";
 import About from "./components/about";
 import Project from "./components/projects";
 import TechStack from "./components/techs";
+import Background from "./components/background";
 
 export default function App() {
   const ref = useRef(null);
@@ -26,20 +27,21 @@ export default function App() {
           restDelta: 0.001,
         }}
       />
-      <main className="flex flex-col items-center justify-between cursor-cell bg-stone-950">
+      <main className="flex flex-col items-center justify-between cursor-cell bg-stone-950 scroll-smooth">
         <About />
 
         <Project />
         <TechStack />
+        <Background />
         {/* 
-        About & Link
+        About & Link //
         more about
         
-        Project
+        Project //
         
-        Tech stacks
+        Tech stacks //
         
-        // Background
+        Background
         - Graphic Programmer
         - Software Developer
         - Graduate of BSIT

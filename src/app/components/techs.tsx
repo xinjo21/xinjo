@@ -30,8 +30,10 @@ import { motion } from "framer-motion";
 
 export default function TechStack() {
   return (
-    <div className="bg-zinc-900 w-[100vw] mt-20">
-      <p className="text-2xl font-bold m-5 text-center mt-10">Technologies I use</p>
+    <div className="bg-neutral-900 w-[100vw] mt-20 pb-20">
+      <p className="text-2xl font-bold m-5 text-center mt-10">
+        Technologies I use
+      </p>
 
       <div className="flex flex-wrap gap-4 md:w-[70vw] w-[90vw] justify-center m-auto">
         <div className="flex flex-col rounded-md p-4 gap-4 md:w-96 w-[90vw]">

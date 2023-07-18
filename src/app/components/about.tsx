@@ -14,7 +14,7 @@ export default function About() {
               I am <strong>El-Razin Jo</strong>, based on the Philippines
             </p>
           </div>
-          <p>not a pro but pwede na</p>
+          <p></p>
         </div>
         <div className="z-10 h-full flex flex-col gap-8 place-content-center color-gray-500">
           <a href="https://github.com/xinjo21" target="_blank">
@@ -28,9 +28,12 @@ export default function About() {
           </a>
         </div>
       </div>
-      <p className="h-[10vh] pt-2 font-mono tracking-widest flex flex-col place-items-center">
-        scroll down <BsChevronCompactDown className="h-6 w-6" />
-      </p>
+      <div className="animate-bounce flex flex-col place-items-center h-[10vh] p-7">
+        <p className="font-mono tracking-widest">
+          scroll down
+        </p>
+        <BsChevronCompactDown className="h-6 w-6" />
+      </div>
     </>
   );
 }

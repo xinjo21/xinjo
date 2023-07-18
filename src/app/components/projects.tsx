@@ -48,11 +48,13 @@ export default function Project() {
 
 function ProjectCard({ Project }: ProjectType) {
   return (
-    <div className="m-5 w-[400px] h-[440px] bg-zinc-900 rounded-md">
-      <div className="w-[400px] h-[250px] bg-zinc-100 rounded-md"></div>
-      <div className=" p-5 flex flex-col">
-        <p className="text-lg font-bold mb-2">{Project.name}</p>
-        <p className="mb-2">{Project.definition}</p>
+    <div className="m-5 w-[400px] h-[500px] bg-neutral-900 rounded-md border border-gray-700">
+      <div className="w-[400px] h-[250px] bg-neutral-100 rounded-md"></div>
+      <div className="h-[250px] p-5 flex flex-col justify-between">
+        <div>
+          <p className="text-lg font-bold mb-2">{Project.name}</p>
+          <p className="mb-2">{Project.definition}</p>
+        </div>
         <div>
           <p className="text-sm text-zinc-400">Technologies:</p>
           <p className="text-sm">{Project.technologies}</p>
