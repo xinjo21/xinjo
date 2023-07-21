@@ -25,6 +25,8 @@ import {
   SiPowershell,
   SiCplusplus,
   SiElectron,
+  SiAdobepremierepro,
+  SiAdobeaftereffects
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -75,6 +77,8 @@ export default function TechStack() {
           <div className="flex flex-wrap gap-6 justify-center ">
             <SiAdobephotoshop className="w-12 h-12" />
             <SiAdobeillustrator className="w-12 h-12" />
+            <SiAdobepremierepro className="w-12 h-12" />
+            <SiAdobeaftereffects className="w-12 h-12" />
             <SiAdobexd className="w-12 h-12" />
             <SiFigma className="w-12 h-12" />
           </div>

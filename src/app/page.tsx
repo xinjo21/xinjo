@@ -9,6 +9,7 @@ import About from "./components/about";
 import Project from "./components/projects";
 import TechStack from "./components/techs";
 import Background from "./components/background";
+import Footer from "./components/footer";
 
 export default function App() {
   const ref = useRef(null);
@@ -33,6 +34,7 @@ export default function App() {
         <Project />
         <TechStack />
         <Background />
+        <Footer />
         {/* 
         About & Link //
         more about
