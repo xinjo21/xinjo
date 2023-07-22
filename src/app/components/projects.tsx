@@ -1,3 +1,4 @@
+
 type ProjectType = {
   no: number;
   name: string;
@@ -20,11 +21,19 @@ const projectList: ProjectType[] = [
     no: 2,
     name: "Sta. Maria Barangay Information System",
     technologies: "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB",
-    definition: "Full stack web application that stores barangay information",
+    definition: "Web application that stores barangay information",
     image: "",
   },
   {
     no: 3,
+    name: "CTE Information System",
+    technologies: "JavaScript, ReactJS, PHP, Laravel, MySQL",
+    definition:
+      "Web application that stores faculties' data and their class schedules",
+    image: "",
+  },
+  {
+    no: 4,
     name: "RFID Payment",
     technologies: "Python, Raspberry Pi, RFID Module",
     definition: "A beep card for payments in school canteen and/or jeepney",
@@ -35,7 +44,7 @@ const projectList: ProjectType[] = [
 export default function Project() {
   return (
     <>
-      <p className="text-2xl font-bold m-5">Projects</p>
+      <p className="text-2xl font-bold m-5">Works</p>
       <div className="md:flex">
         {projectList &&
           projectList.map((project: ProjectType) => (
@@ -56,7 +65,7 @@ function ProjectCard({ Project }: ProjectType) {
           <p className="mb-2">{Project.definition}</p>
         </div>
         <div>
-          <p className="text-sm text-zinc-400">Technologies:</p>
+          <p className="text-sm text-neutral-400">Technologies:</p>
           <p className="text-sm">{Project.technologies}</p>
         </div>
       </div>

@@ -39,7 +39,7 @@ export default function TechStack() {
 
       <div className="flex flex-wrap gap-4 md:w-[70vw] w-[90vw] justify-center m-auto">
         <div className="flex flex-col rounded-md p-4 gap-4 md:w-96 w-[90vw]">
-          <p className="text-center text-gray-400">Programming Languages </p>
+          <p className="text-center text-indigo-400">Programming Languages </p>
           <div className="flex flex-wrap gap-6 justify-center">
             <SiJavascript className="w-12 h-12" />
             <SiTypescript className="w-12 h-12" />
@@ -48,7 +48,7 @@ export default function TechStack() {
           </div>
         </div>
         <div className="flex flex-col rounded-md p-4 gap-4 md:w-96 w-[90vw]">
-          <p className="text-center text-gray-400">Web/App Development</p>
+          <p className="text-center text-indigo-400">Web/App Development</p>
           <div className="flex flex-wrap gap-6 justify-center ">
             <SiHtml5 className="w-12 h-12" />
             <SiCss3 className="w-12 h-12" />
@@ -65,7 +65,7 @@ export default function TechStack() {
         </div>
 
         <div className="flex flex-col rounded-md p-4 gap-4 md:w-96 w-[90vw]">
-          <p className="text-center text-gray-400">Database</p>
+          <p className="text-center text-indigo-400">Database</p>
           <div className="flex flex-wrap gap-6 justify-center ">
             <SiMongodb className="w-12 h-12" />
             <SiMysql className="w-12 h-12" />
@@ -73,7 +73,7 @@ export default function TechStack() {
         </div>
 
         <div className="flex flex-col rounded-md p-4 gap-4 md:w-96 w-[90vw]">
-          <p className="text-center text-gray-400">Graphic Designing | UI/UX</p>
+          <p className="text-center text-indigo-400">Graphic Designing | UI/UX</p>
           <div className="flex flex-wrap gap-6 justify-center ">
             <SiAdobephotoshop className="w-12 h-12" />
             <SiAdobeillustrator className="w-12 h-12" />
@@ -85,7 +85,7 @@ export default function TechStack() {
         </div>
 
         <div className="flex flex-col rounded-md p-4 gap-4 md:w-96 w-[90vw]">
-          <p className="text-center text-gray-400">Tools & Others</p>
+          <p className="text-center text-indigo-400">Tools & Others</p>
           <div className="flex flex-wrap gap-6 justify-center ">
             <SiVisualstudio className="w-12 h-12" />
             <SiLinux className="w-12 h-12" />

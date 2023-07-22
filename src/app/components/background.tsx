@@ -103,7 +103,7 @@ const experienceList: ExperienceType[] = [
 
 export default function Background() {
   return (
-    <div className="mt-20 w-[100vw] md:w-[70vw] w-[90vw] ">
+    <div className="mt-20 w-[100vw] md:w-[70vw] w-[90vw]">
       <p className="text-2xl font-bold m-5 text-center mt-10">
         Background & Experience
       </p>
@@ -126,14 +126,14 @@ function ExperienceCard({ experience }: ExperienceType) {
 
       <div className="col-span-2">
         <p className="font-bold text-lg">{experience.position}</p>
-        <p className="text-neutral-400">{experience.companyName}</p>
+        <p className="text-indigo-400">{experience.companyName}</p>
         <p className="mt-3">{experience.description}</p>
-        <div className="flex gap-2 flex-wrap text-neutral-400 py-2 w-100">
+        <div className="flex gap-2 flex-wrap text-neutral-500 py-2 w-100">
           {technologies &&
             technologies.map((technology: String) => (
               <div
                 key={experience.no}
-                className="flex border border-neutral-400 px-2 rounded-full"
+                className="flex border border-neutral-500 px-2 rounded-full"
               >
                 <p className="text-xs">{technology}</p>
               </div>

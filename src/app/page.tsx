@@ -19,7 +19,7 @@ export default function App() {
     <>
       <motion.div
         ref={ref}
-        className="w-[50px] h-[50px] rounded-full bg-sky-400 top-0 left-0 fixed pointer-events-none"
+        className="w-[50px] h-[50px] rounded-full bg-indigo-600 top-0 left-0 fixed opacity-50 pointer-events-none"
         animate={{ x, y }}
         transition={{
           type: "spring",
