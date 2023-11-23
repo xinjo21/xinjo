@@ -10,6 +10,7 @@ import Project from "./components/projects";
 import TechStack from "./components/techs";
 import Background from "./components/background";
 import Footer from "./components/footer";
+import Dev from "./components/dev";
 
 export default function App() {
   const ref = useRef(null);
@@ -29,6 +30,8 @@ export default function App() {
         }}
       />
       <main className="flex flex-col items-center justify-between cursor-cell bg-stone-950 scroll-smooth">
+        <Dev />
+
         <About />
 
         <Project />
