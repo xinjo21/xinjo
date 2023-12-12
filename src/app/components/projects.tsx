@@ -1,5 +1,5 @@
-import DetechFish from "../../../public/projects/detechfish.png";
-import StaMaria from "../../../public/projects/stamaria.png";
+import DetechFish from "../images/projects/detechfish.png";
+import StaMaria from "../images/projects/stamaria.png";
 
 import Image from "next/image";
 import { Box, Center, Flex } from "@chakra-ui/react";
