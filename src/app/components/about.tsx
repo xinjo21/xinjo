@@ -1,6 +1,6 @@
 import Image from "next/image";
 import XinJoLogo from "../../../public/xinjo-logo.svg";
-import ProfilePic from "../../../public/xinjo-pic.png";
+import ProfilePic from "../../../public/xinjo-pic.PNG";
 import { Box, Center, Flex, Spacer, HStack } from "@chakra-ui/react";
 import {
   Typography,
