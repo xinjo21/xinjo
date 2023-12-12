@@ -1,22 +1,21 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "El-Razin Jo",
   description: "Your full stack dev",
 };
 
-export default function RootLayout({
+export default function RootLayout({  
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="light">
+      <body>
+        {children}
+      </body>
     </html>
   );
 }

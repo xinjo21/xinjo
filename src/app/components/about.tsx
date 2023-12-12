@@ -1,66 +1,192 @@
+import Image from "next/image";
+import XinJoLogo from "../../../public/xinjo-logo.svg";
+import ProfilePic from "../../../public/xinjo-pic.png";
+import { Box, Center, Flex, Spacer, HStack } from "@chakra-ui/react";
+import {
+  Typography,
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+} from "@material-tailwind/react";
 import { SiLinkedin, SiGithub, SiBehance } from "react-icons/si";
-import { BsChevronCompactDown } from "react-icons/bs";
 import { motion } from "framer-motion";
+
+const RESUME_LINK =
+  "https://drive.google.com/file/d/1srFIMenzKFayA18Dr52wj8CB33X2j-VB/view?usp=drive_link";
+
+const links = [
+  {
+    label: "LinkedIn",
+    link: "https://www.linkedin.com/in/elrazinjo/",
+  },
+  {
+    label: "Github",
+    link: "https://github.com/xinjo21",
+  },
+  {
+    label: "Facebook",
+    link: "https://fb.com/xinjo21",
+  },
+  {
+    label: "Instagram",
+    link: "https://www.instagram.com/xinjo_/",
+  },
+  {
+    label: "Behance",
+    link: "http://be.net/xinjo21",
+  },
+];
 
 export default function About() {
   return (
-    <div className=" h-screen w-screen  bg-zinc-900  ">
-      <div className="flex items-end p-6 h-[90vh] md:p-24 justify-between">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.5,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
-        >
-          <p className="font-bold text-2xl mb-2">
-            fullstack web developer & graphic designer
-          </p>
-          <div className="flex text-4xl">
-            <p>
-              I am <strong className="text-indigo-500">El-Razin Jo</strong>,
-              based in the Philippines
-            </p>
-          </div>
-          <p>Currently looking for a work. resume</p>
-        </motion.div>
+    <Box
+      w="100vw"
+      px={[2, 8, 14]}
+      className="bg-gradient-to-r from-indigo-900/10 via-blue-100/0 to-blue-900/10"
+    >
+      <Flex h="100vh" flexDir={["column", "row"]}>
+        <Center w={["100%", "25%"]} flexDir="column">
+          <motion.div
+            initial={{ x: -500 }}
+            animate={{ x: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <Typography className="font-bold text-xl md:text-2xl text-left mt-6 w-full">
+              Transforming Ideas into{" "}
+              <a className="underline decoration-blue-500 decoration-4">
+                Seamless Digital Experiences
+              </a>
+              {"  "}💻
+            </Typography>
+            <Typography className="font-light text-base md:text-lg text-left w-full">
+              based in Zamboanga, Philippines 🌴
+            </Typography>
+          </motion.div>
+        </Center>
 
-        <motion.div
-          initial={{ x: 150 }}
-          animate={{ x: 0 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.5,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
-          className="z-10 h-full flex flex-col gap-8 place-content-center color-gray-500"
+        <Center
+          flexDir="column"
+          w={["100%", "50%"]}
+          h={["70%", "100%"]}
+          py={[0, 14]}
         >
-          <a href="https://github.com/xinjo21" target="_blank">
-            <SiGithub className="w-7 h-7" />
-          </a>
-          <a href="https://www.linkedin.com/in/elrazinjo/" target="_blank">
-            <SiLinkedin className="w-7 h-7" />
-          </a>
-          <a href="http://be.net/xinjo21" target="_blank">
-            <SiBehance className="w-7 h-7" />
-          </a>
-        </motion.div>
-      </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 100 }}
-        transition={{
-          duration: 0.8,
-          delay: 0.5,
-          ease: [0, 0.71, 0.2, 1.01],
-        }}
-        className="flex flex-col place-items-center h-[10vh] p-7"
-      >
-        <p className="font-mono tracking-widest">more</p>
-        <BsChevronCompactDown className="h-6 w-6" />
-      </motion.div>
-    </div>
+          <Image
+            priority
+            src={ProfilePic}
+            alt="Picture of El-Razin"
+            className="fill absolute -z-10 top-60 w-auto h-auto md:h-screen"
+          />
+          <Image
+            priority
+            src={XinJoLogo}
+            alt="Logo of XinJo"
+            className="fill absolute -z-20 top-52 right-28 md:w-auto md:h-screen opacity-20"
+          />
+          <motion.div
+            initial={{ y: -500 }}
+            animate={{ y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="text-center"
+          >
+            <Typography className="font-normal text-lg text-gray-700 mt-4 md:mt-14">
+              Hello
+            </Typography>
+            <Typography className="font-black text-4xl md:text-6xl tracking-normal">
+              {`I'm El-Razin Jo`}
+            </Typography>
+            <Typography className="font-bold text-lg  text-blue-500">
+              Full Stack Web Developer & Graphic Designer
+            </Typography>
+          </motion.div>
+
+          <Spacer />
+
+          <Button
+            color="blue"
+            variant="filled"
+            size="lg"
+            className="rounded-full shadow-2xl shadow-blue-400 mb-20 sm:mb-10 lg:mb-20"
+            onClick={() => open(RESUME_LINK)}
+          >
+            Download Resume
+          </Button>
+        </Center>
+
+        <Center w={["100%", "25%"]} flexDir="column" py={[0, 14]}>
+          <motion.div
+            initial={{ x: 350 }}
+            animate={{ x: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <HStack spacing="24px">
+              <a href="https://github.com/xinjo21" target="_blank">
+                <SiGithub className="w-7 h-7" />
+              </a>
+              <a href="https://www.linkedin.com/in/elrazinjo/" target="_blank">
+                <SiLinkedin className="w-7 h-7" />
+              </a>
+              <a href="http://be.net/xinjo21" target="_blank">
+                <SiBehance className="w-7 h-7" />
+              </a>
+            </HStack>
+          </motion.div>
+          <Spacer />
+          <Card className="mt-6 w-96">
+            <CardBody>
+              <Typography variant="h5" className="mb-2 text-mg-100">
+                Software Engineer
+              </Typography>
+              <Typography className="text-mg-900">
+                will be announced and updated @ 01.03.24
+              </Typography>
+            </CardBody>
+          </Card>
+          <Spacer />
+          <Box className="text-right">
+            <p className="text-base">
+              I am open for projects, speeches, or a chat.
+            </p>
+            <p className="font-medium text-lg">Get in touch with me</p>
+            <a
+              className="text-blue-500 text-lg"
+              href="mailto:elrazinmjo@gmail.com"
+            >
+              ✉️ elrazinmjo@gmail.com
+            </a>
+            <Box className="flex gap-2 place-content-center">
+              {links.map(({ label, link }) => (
+                <>
+                  <a
+                    key={label}
+                    className="hover:text-blue-500"
+                    href={link}
+                    target="_blank"
+                  >
+                    {label}
+                  </a>
+                  •
+                </>
+              ))}
+            </Box>
+            <p className="tracking-wide text-sm font-bold mt-5">
+              © 2023 El-Razin Jo
+            </p>
+          </Box>
+        </Center>
+      </Flex>
+    </Box>
   );
 }
