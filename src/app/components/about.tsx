@@ -45,8 +45,8 @@ export default function About() {
       px={[2, 8, 14]}
       className="bg-gradient-to-r from-indigo-900/10 via-blue-100/0 to-blue-900/10"
     >
-      <Flex h="100vh" flexDir={["column", "column", "row"]}>
-        <Center w={["100%", "25%"]} flexDir="column">
+      <Box h="100vh" className="flex flex-col lg:flex-row">
+        <Center w={["100%", "100%", "25%"]} flexDir="column">
           <motion.div
             initial={{ x: -500 }}
             animate={{ x: 0 }}
@@ -71,7 +71,7 @@ export default function About() {
 
         <Center
           flexDir="column"
-          w={["100%", "50%"]}
+          w={["100%", "100%", "50%"]}
           h={["70%", "100%"]}
           py={[0, 14]}
         >
@@ -121,7 +121,7 @@ export default function About() {
           </Button>
         </Center>
 
-        <Center w={["100%", "25%"]} flexDir="column" py={[0, 14]}>
+        <Flex w={["100%", "100%", "25%"]} flexDir="column" py={[0, 14]}>
           <Spacer />
           <motion.div
             initial={{ x: 400 }}
@@ -145,7 +145,7 @@ export default function About() {
               >
                 ✉️ elrazinmjo@gmail.com
               </a>
-              <Box className="flex gap-2 place-content-center text-xs lg:text-sm">
+              <Box className="flex gap-2 flex-row-reverse text-xs lg:text-sm">
                 {links.map(({ label, link }) => (
                   <>
                     <a
@@ -165,8 +165,8 @@ export default function About() {
               </p>
             </Box>
           </motion.div>
-        </Center>
-      </Flex>
+        </Flex>
+      </Box>
     </Box>
   );
 }
