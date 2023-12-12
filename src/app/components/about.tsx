@@ -45,7 +45,7 @@ export default function About() {
       px={[2, 8, 14]}
       className="bg-gradient-to-r from-indigo-900/10 via-blue-100/0 to-blue-900/10"
     >
-      <Flex h="100vh" flexDir={["column", "row"]}>
+      <Flex h="100vh" flexDir={["column", "column", "row"]}>
         <Center w={["100%", "25%"]} flexDir="column">
           <motion.div
             initial={{ x: -500 }}
@@ -122,6 +122,7 @@ export default function About() {
         </Center>
 
         <Center w={["100%", "25%"]} flexDir="column" py={[0, 14]}>
+          <Spacer />
           <motion.div
             initial={{ x: 350 }}
             animate={{ x: 0 }}
@@ -131,60 +132,37 @@ export default function About() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            <HStack spacing="24px">
-              <a href="https://github.com/xinjo21" target="_blank">
-                <SiGithub className="w-7 h-7" />
+            <Box className="text-right p-5">
+              <p className="text-base">
+                I am open for projects, speeches, or a chat.
+              </p>
+              <p className="font-medium text-lg">Get in touch with me</p>
+              <a
+                className="text-blue-500 text-lg"
+                href="mailto:elrazinmjo@gmail.com"
+              >
+                ✉️ elrazinmjo@gmail.com
               </a>
-              <a href="https://www.linkedin.com/in/elrazinjo/" target="_blank">
-                <SiLinkedin className="w-7 h-7" />
-              </a>
-              <a href="http://be.net/xinjo21" target="_blank">
-                <SiBehance className="w-7 h-7" />
-              </a>
-            </HStack>
-          </motion.div>
-          <Spacer />
-          <Card className="mt-6 w-96">
-            <CardBody>
-              <Typography variant="h5" className="mb-2 text-mg-100">
-                Software Engineer
-              </Typography>
-              <Typography className="text-mg-900">
-                will be announced and updated @ 01.03.24
-              </Typography>
-            </CardBody>
-          </Card>
-          <Spacer />
-          <Box className="text-right">
-            <p className="text-base">
-              I am open for projects, speeches, or a chat.
-            </p>
-            <p className="font-medium text-lg">Get in touch with me</p>
-            <a
-              className="text-blue-500 text-lg"
-              href="mailto:elrazinmjo@gmail.com"
-            >
-              ✉️ elrazinmjo@gmail.com
-            </a>
-            <Box className="flex gap-2 place-content-center">
-              {links.map(({ label, link }) => (
-                <>
-                  <a
-                    key={label}
-                    className="hover:text-blue-500"
-                    href={link}
-                    target="_blank"
-                  >
-                    {label}
-                  </a>
-                  •
-                </>
-              ))}
+              <Box className="flex gap-2 place-content-center">
+                {links.map(({ label, link }) => (
+                  <>
+                    <a
+                      key={label}
+                      className="hover:text-blue-500"
+                      href={link}
+                      target="_blank"
+                    >
+                      {label}
+                    </a>
+                    •
+                  </>
+                ))}
+              </Box>
+              <p className="tracking-wide text-sm font-bold mt-5">
+                © 2023 El-Razin Jo
+              </p>
             </Box>
-            <p className="tracking-wide text-sm font-bold mt-5">
-              © 2023 El-Razin Jo
-            </p>
-          </Box>
+          </motion.div>
         </Center>
       </Flex>
     </Box>

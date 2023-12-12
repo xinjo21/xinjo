@@ -58,9 +58,9 @@ export default function Project() {
   return (
     <Box
       w="100vw"
-      h={["100%", "100vh"]}
+      h="100%"
       px={[4, 8, 14]}
-      className="bg-gradient-to-r from-indigo-900/10 via-blue-100/10 to-blue-900/10 p-10 "
+      className="bg-gradient-to-r from-indigo-900/10 via-blue-100/10 to-blue-900/10 p-10 pb-20"
     >
       <Typography variant="h3" className="mb-7">Projects</Typography>
       <Flex gap={4} flexDir={["column", "column", "column", "row"]} my={20} justifyContent='center' alignContent='center'>

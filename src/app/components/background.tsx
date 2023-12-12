@@ -84,7 +84,7 @@ const experienceList: ExperienceType[] = [
     position: "Editor-In-Chief & Graphic Designer",
     companyName: "The New Blazer",
     description:
-      "Served as Editor-in-Chied from 2019 to 2022, providing leadership and direction to the organization • • Held the role of Managing Editor from 2018 to 2019, contributing to the editorial and operational aspects of the publication • • Served as a Graphic Designer from 2016 to 2022, responsible for designing and conceptualizing the yearbook and other publication materials",
+      "Served as Editor-in-Chief from 2019 to 2022, providing leadership and direction to the organization • • Held the role of Managing Editor from 2018 to 2019, contributing to the editorial and operational aspects of the publication • • Served as a Graphic Designer from 2016 to 2022, responsible for designing and conceptualizing the yearbook and other publication materials",
     dateStartAndEnd: "July 2019 - May 2022",
     technologies: [
       "Adobe Illustrator",
