@@ -62,8 +62,16 @@ export default function Project() {
       px={[4, 8, 14]}
       className="bg-gradient-to-r from-indigo-900/10 via-blue-100/10 to-blue-900/10 p-10 pb-20"
     >
-      <Typography variant="h3" className="mb-7">Projects</Typography>
-      <Flex gap={4} flexDir={["column", "column", "column", "row"]} my={20} justifyContent='center' alignContent='center'>
+      <Typography variant="h3" className="mb-7">
+        Projects
+      </Typography>
+      <Flex
+        gap={4}
+        flexDir={["column", "column", "column", "row"]}
+        my={20}
+        justifyContent="center"
+        alignContent="center"
+      >
         {projectList.map((project: ProjectType) => (
           <Card key={project.no} className="w-full max-w-[26rem] shadow-lg">
             <CardHeader floated={false} color="blue-gray" className="h-[215px]">

@@ -124,7 +124,7 @@ export default function About() {
         <Center w={["100%", "25%"]} flexDir="column" py={[0, 14]}>
           <Spacer />
           <motion.div
-            initial={{ x: 350 }}
+            initial={{ x: 400 }}
             animate={{ x: 0 }}
             transition={{
               duration: 0.8,
@@ -132,18 +132,20 @@ export default function About() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            <Box className="text-right p-5">
-              <p className="text-base">
+            <Box className="text-right p-5 mb-10 md:mb-0">
+              <p className="text-sm md:text-base">
                 I am open for projects, speeches, or a chat.
               </p>
-              <p className="font-medium text-lg">Get in touch with me</p>
+              <p className="font-medium text-base md:text-lg">
+                Get in touch with me
+              </p>
               <a
-                className="text-blue-500 text-lg"
+                className="text-blue-500 text-base md:text-lg"
                 href="mailto:elrazinmjo@gmail.com"
               >
                 ✉️ elrazinmjo@gmail.com
               </a>
-              <Box className="flex gap-2 place-content-center">
+              <Box className="flex gap-2 place-content-center text-xs lg:text-sm">
                 {links.map(({ label, link }) => (
                   <>
                     <a
@@ -158,7 +160,7 @@ export default function About() {
                   </>
                 ))}
               </Box>
-              <p className="tracking-wide text-sm font-bold mt-5">
+              <p className="tracking-wide text-xs lg:text-sm font-bold mt-5">
                 © 2023 El-Razin Jo
               </p>
             </Box>
