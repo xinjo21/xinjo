@@ -12,7 +12,21 @@ type ExperienceType = {
 
 const experienceList: ExperienceType[] = [
   {
-    no: 1,
+    no: 6,
+    position: "Software Developer",
+    companyName: "- -",
+    description:
+      "- - -",
+    dateStartAndEnd: "Jan 2024 - - -",
+    technologies: [
+      "TypeScript",
+      "- -",
+      "- -",
+      "ReactJS",
+    ],
+  },
+  {
+    no: 5,
     position: "Graphics Programmer | Contractual",
     companyName: "Research Development and Evaluation Center - WMSU",
     description:
@@ -27,7 +41,7 @@ const experienceList: ExperienceType[] = [
     ],
   },
   {
-    no: 2,
+    no: 4,
     position: "Software Developer | Internship",
     companyName: "College of Teachers Education - WMSU",
     description:
@@ -63,7 +77,7 @@ const experienceList: ExperienceType[] = [
     ],
   },
   {
-    no: 4,
+    no: 2,
     position: "Creative Lead",
     companyName: "The Venom Publication",
     description: "Served as the Creative Lead for the official student publication of the College of Computing Studies at WMSU • • Designed and conceptualized publication materials • • Lead the creative team in establishing a distinct identity within the university.",
@@ -80,7 +94,7 @@ const experienceList: ExperienceType[] = [
     ],
   },
   {
-    no: 5,
+    no: 1,
     position: "Editor-In-Chief & Graphic Designer",
     companyName: "The New Blazer",
     description:
