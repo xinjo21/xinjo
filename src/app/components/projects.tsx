@@ -60,7 +60,7 @@ export default function Project() {
       w="100vw"
       h="100%"
       px={[4, 8, 14]}
-      className="bg-gradient-to-r from-indigo-900/10 via-blue-100/10 to-blue-900/10 p-10 pb-20"
+      className="mx-auto p-10 pb-20"
     >
       <Typography variant="h3" className="mb-7">
         Projects
@@ -75,11 +75,13 @@ export default function Project() {
         {projectList.map((project: ProjectType) => (
           <Card key={project.no} className="w-full max-w-[26rem] shadow-lg">
             <CardHeader floated={false} color="blue-gray" className="h-[215px]">
-              <Image
-                src={project.image}
-                alt={`Logo of ${project.name}`}
-                fill={false}
-              />
+              <div className='max-h-36'>
+                <Image
+                  src={project.image}
+                  alt={`Logo of ${project.name}`}
+                  fill={false}
+                />
+              </div>
             </CardHeader>
             <CardBody>
               <div className="mb-3 flex items-center justify-between">

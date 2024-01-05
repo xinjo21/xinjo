@@ -14,16 +14,10 @@ const experienceList: ExperienceType[] = [
   {
     no: 6,
     position: "Software Developer",
-    companyName: "- -",
-    description:
-      "- - -",
-    dateStartAndEnd: "Jan 2024 - - -",
-    technologies: [
-      "TypeScript",
-      "- -",
-      "- -",
-      "ReactJS",
-    ],
+    companyName: "Mashup Garage",
+    description: "",
+    dateStartAndEnd: "Jan 2024 - Present",
+    technologies: ["TypeScript", "ReactJS", "NextJS", "Firebase"],
   },
   {
     no: 5,
@@ -124,7 +118,7 @@ export default function Background() {
       w="100vw"
       h="100%"
       px={[4, 8, 14]}
-      className="bg-gradient-to-r from-indigo-900/10 via-blue-100/10 to-blue-900/10 p-10 pb-20"
+      className="p-10 pb-20"
     >
       <Typography variant="h3" className="mb-10">
         Background and Experience

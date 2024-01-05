@@ -43,9 +43,9 @@ export default function About() {
     <Box
       w="100vw"
       px={[2, 8, 14]}
-      className="bg-gradient-to-r from-indigo-900/10 via-blue-100/0 to-blue-900/10"
+      className=""
     >
-      <Box h="100vh" className="flex flex-col lg:flex-row">
+      <Box h="100vh" className="container mx-auto flex flex-col lg:flex-row">
         <Center w={["100%", "100%", "25%"]} flexDir="column">
           <motion.div
             initial={{ x: -500 }}

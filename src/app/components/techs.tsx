@@ -37,7 +37,7 @@ export default function TechStack() {
     w="100vw"
     h="100%"
     px={[4, 8, 14]}
-    className="bg-gradient-to-r from-indigo-900/10 via-blue-100/10 to-blue-900/10 p-10 pb-20"
+    className="p-10 pb-20"
     >
       <Typography variant="h3" className="mb-10">
         Technologies I use
